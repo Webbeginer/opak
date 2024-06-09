@@ -1,0 +1,349 @@
+:root {
+    --shadow: 0 2px 2px rgb(0 0 0 /0.5);
+    --color: rgb(136, 133, 133);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+
+nav .nav-link{
+    font-size: 1.2rem;
+    transition: all;
+    transition-delay: 0.2s;
+    transition-duration: 0.7s;
+    font-family: 'Dancing Script', cursive;
+}
+nav .nav-link:hover{
+   color: var(--color)
+   
+}
+.container-home{
+
+    width: 100%;
+    height: 680px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;;
+    align-items: center;
+    justify-content: space-around;
+}
+.container-home h4{
+    color: rgb(92, 65, 65);
+    font-family: 'Dancing Script', cursive;
+    margin-left: 20px;
+    font-size: 2rem;
+    text-shadow: var(--shadow);
+}
+.container-home button{
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 40px;
+    border-radius: 8px;
+    border-color: gray;
+    box-shadow: var(--shadow);
+    transition: all;
+    transition-duration: .7s;
+}
+.container-home button:hover{
+    background-color: var(--color);
+    border: none;
+}
+.about{
+    background-color: rgba(202, 198, 195, 0.897);
+}
+button a{
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    font-size: 1.2rem;
+}
+.about h2, .contact h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    text-shadow: var(--shadow);
+}
+.about h3, .contact h3{
+    font-size: 1.5rem;
+    font-family: 'Dancing Script', cursive;;
+}
+.about .deskripsi p, footer p{
+    text-indent: 20px;
+    font-size: 1.4rem;
+    font-family: 'Dancing Script', cursive;;
+}
+.about .deskripsi p span{
+    font-size: 1.5rem;
+    font-family: 'Dancing Script', cursive;;
+    color: rgb(7, 0, 0);
+}
+.about .card{
+    border: 1px solid rgb(134, 129, 129);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    margin: 5px;
+}
+.about .gambar:hover{
+    transform: scale(1.1);
+    transition: all;
+    transition-duration: .7s;
+}
+.about .testimoni form label{
+   font-size: 1.3rem;
+}
+
+.about .testimoni form input{
+    font-size: 1.3rem;
+}
+.about .testimoni .costumer-testimoni{
+    font-size: 1.3rem;
+}
+.about .testimoni button, .about .card button{
+    width: 90px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    transition: all;
+    transition-duration: 0.7s;
+}
+.about .testimoni button:hover, .about .card button:hover{
+    background-color: gray;
+    color: white
+}
+.contact .contact-body{
+    border: 1px solid rgb(134, 129, 129);
+    box-shadow: var(--shadow);
+    height: 300px;
+}
+.contact .contact-body p{
+    font-size: 1.3rem;
+    font-family:'Dancing Script', cursive; 
+    text-shadow: var(--shadow);
+}
+.contact .contact-body a{
+    display: block;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    transition: all;
+    transition-duration: 0.7s;
+    transition-delay: 0.4s;
+    background: #bdb7b7;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem;
+    color: white;
+}
+.contact .contact-body a:hover{
+    background-color: white;
+    color: #bdb7b7;
+
+}
+.contact .contact-body  i{
+    font-size: 2rem;
+}
+.contact .contact-body .img-contact{
+    border-left: 1px solid rgb(134, 129, 129);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+footer{
+    padding-top: 20px;
+    margin-top: 40px;
+    width: 100%;
+    height: 180px;
+    background-color: #bdb7b7;
+    padding-bottom: 30px;
+}
+footer p span{
+    text-shadow: var(--shadow);
+}
+
+/* animasi */
+.head-typing{
+    margin-left: 20px;
+}
+
+#typing {
+    width: 0ch;
+    color: rgb(24, 22, 22);
+    float: left;
+    font-family: sans-serif;
+    font-weight:bold;
+    font-size: 1.8rem;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 5s steps(16) 1s infinite alternate;
+    text-shadow: var(--shadow);
+    }
+    #typing span{
+    color:#493419;}
+    #line {
+    float: left;
+    color: rgb(0, 0, 0);
+    font-weight:bold;
+    font-size: 1.8rem;
+    animation: crow 0.5s linear 0s infinite;
+    text-shadow: var(--shadow);
+    }
+    .clearfix{
+        clear: both;
+    }
+    @keyframes typing {
+    from {
+    width: 0ch;
+    }
+    to {
+    width: 15ch;
+    }
+    }
+    @keyframes crow {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+    }
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    nav.nav-link{
+        font-size: .8rem !important;
+    }
+    nav img{
+        width: 130px;
+    }
+    .about .container-costumer{
+    
+        width: 270px;
+    }
+    nav.nav-link{
+        font-size: .6rem;
+    }
+    .container-home{
+        height: 400px;
+    }
+    .container-home h4, #typing, #line{
+        font-size: 1rem;
+    }
+    .container-home img{
+        display: none;
+    }
+    .text-container .text{
+        font-size: 1rem;
+    }
+    .about h2, .contact h2{
+        font-size: 1.2rem;
+    }
+    .about h3, .contact h3{
+        font-size: 1.1rem;
+    }
+    .about .container .deskripsi p, footer p{
+        font-size: 1rem;
+    }
+    .about .container .deskripsi p span{
+        font-size: 1rem;
+ }
+    .about .testimoni form label{
+       font-size: 1rem;
+ }
+ .about .container .card-body{
+    font-size: .8rem;
+}
+.about .container .card-body .card-title{
+    font-size: 1rem;
+}
+ .about .container h2, .about .costumer-testimoni, .about .testimoni form label, .about .testimoni form input, .about .testimoni a{
+     font-size: 1rem;
+ }
+
+.container-home button{
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+button a{
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    font-size: .8rem;
+}
+.contact .contact-body p{
+    font-size: 1rem;
+}
+.contact .contact-body a{
+    font-size: 1rem;
+    width: 200px !important;
+    height: 40px;
+}
+
+}
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    
+    .container-home{
+        height: 400px;
+    }
+    .container-home img{
+        width: 200px;
+    }
+    .container-home h4, h5{
+        font-size: 1.2rem;
+    }
+    .text-container .text{
+        font-size: 1.5rem;
+    }
+    .about .deskripsi p{
+        font-size: 1.2rem;
+ }
+    .about .deskripsi p span{
+        font-size: 1.2rem;
+ }
+    .about .testimoni form label{
+       font-size: 1rem;
+ }
+    .about .testimoni form input{
+        font-size: 1rem;
+ }
+    .about .testimoni .costumer-testimoni{
+        font-size: 1rem;
+ }
+ .contact .contact-body {
+    height: max-content;
+ }
+ .contact .contact-body a{
+    width: 350px;
+ }
+ .contact .contact-body .img-contact{
+    border: none;
+ }
+ .contact .contact-body .img-contact{
+    border-top: 1px solid rgb(134, 129, 129);
+ }
+ .contact .contact-body .img-contact img{
+    width: 60%;
+ }
+}
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {  }
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {  }
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {  }
