@@ -229,7 +229,8 @@ footer p span{
     }
     .about .container-costumer{
     
-        width: 270px;
+    width: 430px;
+    margin-left: 20px;
     }
     nav.nav-link{
         font-size: .6rem;
@@ -287,9 +288,10 @@ button a{
 }
 .contact .contact-body a{
     font-size: 1rem;
-    width: 200px !important;
+    width: 370px !important;
     height: 40px;
 }
+
 
 }
 
